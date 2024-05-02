@@ -1,0 +1,19 @@
+<!-- Alteraçoes para as coleçoes e tags Mario -->
+<!-- ######################################## -->
+                            
+              {% assign pro_collection = product.collections %}
+                  {% if pro_collection %}
+                      All Collection: 
+                      {% for col in pro_collection %}
+                          <a href="{{ col.url }}" title="{{ col.title }}">{{ col.title }}</a>{% unless forloop.last %},{% endunless %}
+                      {% endfor %}
+                  {% endif %}
+
+              <div class="product-tags">
+                {% for tag in product.tags %}
+                <span class="tag"><a href="/collections/all/{{ tag | handleize }}">{{ tag }}</a></span>
+                {% endfor %}
+              </div>
+                            
+<!-- ### -->
+<!-- FIM -->

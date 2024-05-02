@@ -210,6 +210,7 @@
                   {{- product.selected_or_first_available_variant.sku -}}
                 </p>
                             
+              {% include 'collections-tags' %}             
                            
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}

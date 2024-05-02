@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: "BrandonGrotesque-Bold";
   src: url("{{ "BrandonGrotesque-Bold.eot?" | asset_url }}");
   src: url("{{ "BrandonGrotesque-Bold.eot??#iefix" | asset_url }}")
@@ -11,6 +11,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
 }
+*/
 
 @font-face {
   font-family: BrandonGrotesque-bold;

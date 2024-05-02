@@ -3624,6 +3624,29 @@ details-disclosure > details {
   }
 }
 
+/* Alinha quantidade e botão na mesma linha */
+@media (min-width: 767px) {
+  div#Quantity-Form-template--16095234916514__main {
+    display: inline-block;
+  }
+  div#Quantity-Form-template--16095234916514__main ~ div:has(.product-form) {
+    display: inline-block !important;
+    transform: translateY(4px) !important;
+  }
+  div#Quantity-Form-template--16095234916514__main
+    ~ div:has(.product-form)
+    .product-form__buttons {
+    display: flex !important;
+  }
+  div#Quantity-Form-template--16095234916514__main
+    ~ div:has(.product-form)
+    .product-form__buttons
+    [data-shopify="payment-button"] {
+    min-width: 163px !important;
+    margin-left: 5px;
+  }
+}
+
 /* Pagina Produtos */
 
 a.links__collections {

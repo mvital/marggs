@@ -3625,16 +3625,6 @@ details-disclosure > details {
 }
 
 /* Pagina Produtos */
-.product__sku {
-  margin-top: -1.4rem !important;
-}
-.product-collections {
-  margin-top: -0.2rem !important;
-  width: 90%;
-}
-.product-tags {
-  margin-top: -0.2rem !important;
-}
 
 a.links__collections {
   background-color: white;
@@ -3644,6 +3634,7 @@ a.links__collections {
   font-size: 0.85em;
   color: #e9b211;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 /* Slider */

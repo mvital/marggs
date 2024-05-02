@@ -3636,22 +3636,24 @@ details-disclosure > details {
   margin-top: -0.2rem;
 }
 
-.product-tags a {
+a.product-tags {
   background-color: white;
   display: inline-block;
   margin-top: 4px;
   line-height: 2;
   font-size: 0.85em;
   color: #e9b211;
+  text-decoration: none;
 }
 
-.product-collections a {
+a.product-collections {
   background-color: white;
   display: inline-block;
   margin-top: 4px;
   line-height: 2;
   font-size: 0.85em;
   color: #e9b211;
+  text-decoration: none;
 }
 
 /* Slider */

@@ -5,7 +5,7 @@
                   {% if pro_collection %}
                       All Collection: 
                       {% for col in pro_collection %}
-                          <a href="{{ col.url }}" title="{{ col.title }}">{{ col.title }}</a>{% unless forloop.last %},{% endunless %}
+                          <a class="links__collections" href="{{ col.url }}" title="{{ col.title }}">{{ col.title }}</a>{% unless forloop.last %},{% endunless %}
                       {% endfor %}
                   {% endif %}
               </div>
@@ -14,7 +14,7 @@
                   {% if product.tags %}
                       Tags:
                       {% for tag in product.tags %}
-                          <a href="/collections/all/{{ tag | handleize }}">{{ tag }}</a>
+                          <a class="links__collections" href="/collections/all/{{ tag | handleize }}">{{ tag }}</a>
                       {% endfor %}
                   {%  endif %}
               </div>

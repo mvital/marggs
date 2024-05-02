@@ -1,6 +1,6 @@
 <!-- Alteraçoes para as coleçoes e tags Mario -->
 <!-- ######################################## -->
-                            
+              <div class="product-collections">              
               {% assign pro_collection = product.collections %}
                   {% if pro_collection %}
                       All Collection: 
@@ -8,11 +8,15 @@
                           <a href="{{ col.url }}" title="{{ col.title }}">{{ col.title }}</a>{% unless forloop.last %},{% endunless %}
                       {% endfor %}
                   {% endif %}
-
+                </div
+                
               <div class="product-tags">
-                {% for tag in product.tags %}
-                <span class="tag"><a href="/collections/all/{{ tag | handleize }}">{{ tag }}</a></span>
-                {% endfor %}
+                  {% if product.tags %}
+                      Tags:
+                      {% for tag in product.tags %}
+                          <a href="/collections/all/{{ tag | handleize }}">{{ tag }}</a>
+                      {% endfor %}
+                  {%  endif %}
               </div>
                             
 <!-- ### -->

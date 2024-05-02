@@ -3626,27 +3626,17 @@ details-disclosure > details {
 
 /* Pagina Produtos */
 .product__sku {
-  margin-top: -1.4rem;
+  margin-top: -1.4rem !important;
 }
 .product-collections {
-  margin-top: -0.2rem;
+  margin-top: -0.2rem !important;
   width: 90%;
 }
 .product-tags {
-  margin-top: -0.2rem;
+  margin-top: -0.2rem !important;
 }
 
-a.product-tags {
-  background-color: white;
-  display: inline-block;
-  margin-top: 4px;
-  line-height: 2;
-  font-size: 0.85em;
-  color: #e9b211;
-  text-decoration: none;
-}
-
-a.product-collections {
+.link__collections {
   background-color: white;
   display: inline-block;
   margin-top: 4px;

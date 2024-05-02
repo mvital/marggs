@@ -3624,17 +3624,34 @@ details-disclosure > details {
   }
 }
 
-/* Alterações */
-.product-tags {
+/* Pagina Produtos */
+.product__sku {
+  margin-top: -1.4rem;
+}
+.product-collections {
+  margin-top: -0.2rem;
   width: 90%;
 }
-.product-tags span {
+.product-tags {
+  margin-top: -0.2rem;
+}
+
+.product-tags a {
   background-color: white;
-  padding: 5px 15px 5px 15px;
-  border-radius: 15px;
-  border: 1px solid grey;
   display: inline-block;
   margin-top: 4px;
+  line-height: 2;
+  font-size: 0.85em;
+  color: #e9b211;
+}
+
+.product-collections a {
+  background-color: white;
+  display: inline-block;
+  margin-top: 4px;
+  line-height: 2;
+  font-size: 0.85em;
+  color: #e9b211;
 }
 
 /* Slider */

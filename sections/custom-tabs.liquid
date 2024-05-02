@@ -1,0 +1,150 @@
+{% stylesheet %}
+      ul.custom--tabs{
+        list-style-type: none;
+        width: 1200px;
+        max-width: 100%;
+        display: flex !important;
+        flex-wrap: wrap !important;
+      }
+    .custom--tabs .tab__list{
+      background-color: #efefef;
+      display: inline-block;
+    }
+/* coded by https://websensepro.com team */
+      .custom__tab-content
+      {
+          display:none;
+      }
+      .custom__tab-content.active
+      {
+          display:block;
+      }
+      .tab__list h6.custom-tab
+      {
+          display:inline-block !important;
+          padding:10px 15px !important;
+          cursor: pointer !important;
+        margin: 0px !important;
+      }
+      .active-always{
+        display: block !important;
+      }
+      .tab__list:first-child{
+  background-color: #dfdfdf;
+      }
+      .tab__list h6.custom-tab.active
+      {
+          color:grey !important;
+          border-bottom:1px solid red !important;
+          background-color: #dfdfdf;
+      }
+
+    @media only screen and (max-width: 576px)
+      {
+        ul.custom--tabs{
+          display: flex !important;
+          flex-direction: column !important;
+        }
+        .custom--tabs .tab__list .custom-tab{
+          margin: 0px !important;
+          width: 100%;
+          padding: 10px 15px !important;
+          border-bottom: none !important;
+        }
+        .tab__list h6.custom-tab
+      {
+       padding: 0px !important;
+        margin: 10px 0px !important;
+      }
+        .custom__tab-content.active{
+
+          padding: 0 15px;
+        }
+      }
+{% endstylesheet %}
+
+<ul class="custom--tabs page-width">
+  <!-- coded by https://websensepro.com team -->
+  {% for block in section.blocks %}
+    {% if block.type == 'tab' %}
+      <li class="tab__list {% if forloop.first %}active{% endif %}">
+        <h6
+          class="custom-tab"
+          data-content-id="content--{{ block.id }}--{{ section.id }}"
+        >
+          {{ block.settings.heading }}
+        </h6>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+{% for block in section.blocks %}
+  {% if block.type == 'tab' %}
+    <div
+      id="content--{{ block.id }}--{{ section.id }}"
+      class="custom__tab-content page-width {% if forloop.first %}active{% endif %}"
+    >
+      {{ block.settings.tab_content }}
+    </div>
+  {% endif %}
+{% endfor %}
+
+{% javascript %}
+  tabs= document.querySelectorAll('.custom-tab');
+  tabContents= document.querySelectorAll('.custom__tab-content');
+
+  tabs.forEach(function(tab){
+      tab.addEventListener('click',function(){
+
+          contentId = this.dataset.contentId;
+          content = document.getElementById(contentId);
+
+          tabContents.forEach(function(content){
+              content.classList.remove('active');
+          });
+
+          tabs.forEach(function(tab){
+              tab.classList.remove('active');
+          });
+
+          this.classList.add('active');
+          content.classList.add('active');
+      });
+  });
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Tabs",
+   "blocks": [
+    {
+      "type": "tab",
+      "name": "Tabs",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "info": "Include a heading that explains the tab."
+        },
+         {
+          "type": "richtext",
+          "id": "tab_content",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+   "presets": [
+    {
+      "name": "Tabs",
+      "blocks": [
+        {
+          "type": "tab"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

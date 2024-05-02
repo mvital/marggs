@@ -1,0 +1,121 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/marggs-hp-new-season.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "top-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "collection_list_RaEeKz": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_KVqPy8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "viva-la-vita"
+          }
+        },
+        "featured_collection_GEDPxe": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "summer-season"
+          }
+        },
+        "featured_collection_bpzhMn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "party-collection"
+          }
+        },
+        "featured_collection_3wj6Ut": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ice-collection"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_KVqPy8",
+        "featured_collection_GEDPxe",
+        "featured_collection_bpzhMn",
+        "featured_collection_3wj6Ut"
+      ],
+      "custom_css": [
+        "h2 {font-family: BrandonGrotesque-Bold, serif; color: red; }"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_yQFfRp": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "",
+        "post_limit": 4,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "collection_list_RaEeKz",
+    "featured_collection",
+    "featured_blog_yQFfRp"
+  ]
+}

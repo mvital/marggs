@@ -124,6 +124,11 @@
           {{- 'templates.contact.form.comment' | t -}}
         </label>
       </div>
+
+      <input type="checkbox" class="input-checkbox" id="consent" required>
+          <label for="consent-message"> <span>By providing your phone number, you agree to receive text messages from <strong>this website.</strong> Message and data rates may apply. Message frequency varies</span>
+      </label>
+      
       <div class="contact__button">
         <button type="submit" class="button">
           {{ 'templates.contact.form.send' | t }}

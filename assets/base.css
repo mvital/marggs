@@ -3626,19 +3626,19 @@ details-disclosure > details {
 
 /* Alinha quantidade e botão na mesma linha */
 @media (min-width: 767px) {
-  div#Quantity-Form-template--16095234916514__main {
+  div#Quantity-Form-template--15474071404643__main {
     display: inline-block;
   }
-  div#Quantity-Form-template--16095234916514__main ~ div:has(.product-form) {
+  div#Quantity-Form-template--15474071404643__main ~ div:has(.product-form) {
     display: inline-block !important;
     transform: translateY(4px) !important;
   }
-  div#Quantity-Form-template--16095234916514__main
+  div#Quantity-Form-template--15474071404643__main
     ~ div:has(.product-form)
     .product-form__buttons {
     display: flex !important;
   }
-  div#Quantity-Form-template--16095234916514__main
+  div#Quantity-Form-template--15474071404643__main
     ~ div:has(.product-form)
     .product-form__buttons
     [data-shopify="payment-button"] {

@@ -138,20 +138,8 @@
 
     ],
     "blocks": {
-      "8194784159926722659": {
-        "type": "shopify:\/\/apps\/gg-product-page-slider-gallery\/blocks\/app-embed-block\/09c0440b-b921-435c-a2f5-3fc8f53b0424",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "2153490007123654574": {
         "type": "shopify:\/\/apps\/consentmo-gdpr\/blocks\/gdpr_cookie_consent\/4fbe573f-a377-4fea-9801-3ee0858cae41",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "6933373160360723723": {
-        "type": "shopify:\/\/apps\/swishlist-simple-wishlist\/blocks\/wishlist_settings\/bfcb80f2-f00d-42ae-909a-9f00c726327b",
         "disabled": false,
         "settings": {
         }

@@ -10,7 +10,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-1",
-        "image_behavior": "ambient",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
@@ -51,7 +51,7 @@
         "featured_collection_3wj6Ut"
       ],
       "custom_css": [
-        "h2 {font-family: BrandonGrotesque-Bold, serif; color: red; }"
+
       ],
       "settings": {
         "title": "Collections",
